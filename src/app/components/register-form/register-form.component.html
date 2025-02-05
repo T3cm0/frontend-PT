@@ -1,0 +1,10 @@
+<div class="form-container">
+    <form (ngSubmit)="onSubmit()">
+      <input type="text" id="nombre" [(ngModel)]="user.nombre" name="nombre" placeholder="Nombre" required>
+      <input type="email" id="correo" [(ngModel)]="user.correo" name="correo" placeholder="Correo" required>
+      <input type="text" id="rol" [(ngModel)]="user.rol" name="rol" placeholder="Rol" required>
+      <button type="submit">Enviar</button>
+    </form>
+    <div *ngIf="message" class="message">{{ message }}</div>
+  </div>
+  

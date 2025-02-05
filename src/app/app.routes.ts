@@ -1,3 +1,6 @@
 import { Routes } from '@angular/router';
+import { RegisterFormComponent } from './components/register-form/register-form.component';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+  { path: '', component: RegisterFormComponent }, // Ruta raíz muestra el formulario
+];
